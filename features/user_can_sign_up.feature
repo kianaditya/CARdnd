@@ -22,7 +22,6 @@ Feature: User can sign up
         When I click 'Sign up'
         Then I should see "Email can't be blank"
         And I should see "Password can't be blank"
-        And I should see "Name can't be blank"
 
     Scenario: When Password and Password confirmation doesn't match I get error message
         When I fill in 'Password' field with 'password'
