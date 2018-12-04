@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/aditya/projects/CARdnd/app/models/user.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/models/user.rb": [
         1,
         null,
         null,
@@ -9,42 +9,48 @@
         null,
         null
       ],
-      "/home/aditya/projects/CARdnd/app/models/application_record.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/aditya/projects/CARdnd/app/helpers/application_helper.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/aditya/projects/CARdnd/app/mailers/application_mailer.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/aditya/projects/CARdnd/app/channels/application_cable/channel.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/GergKllai1/craftacademy/CARdnd/app/controllers/application_controller.rb": [
+        0,
+        0
+      ],
+      "/Users/GergKllai1/craftacademy/CARdnd/app/controllers/welcome_controller.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/aditya/projects/CARdnd/app/channels/application_cable/connection.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/home/aditya/projects/CARdnd/app/jobs/application_job.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/channels/application_cable/channel.rb": [
         0,
-        0
-      ],
-      "/home/aditya/projects/CARdnd/app/controllers/application_controller.rb": [
+        0,
         0,
         0
       ]
     },
-    "timestamp": 1543916637
+    "timestamp": 1543925335
   }
 }
