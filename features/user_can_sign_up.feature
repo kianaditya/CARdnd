@@ -6,8 +6,8 @@ Feature: User can sign up
 
     Background: 
         Given the following user exists
-        | name | email          | password | password_confirmation |
-        | Greg | real@email.com | password | password              |
+        |email          | password | password_confirmation |
+        |real@email.com | password | password              |
         And I visit the page
         And I click 'Registration'
 
