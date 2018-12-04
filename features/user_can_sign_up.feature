@@ -12,12 +12,11 @@ Feature: User can sign up
         And I click 'Registration'
 
     Scenario: When I fill in the sign up form correctly, I can sign up
-        When I fill in 'Name' field with 'Donald Trump'
         And I fill in 'Email' field with 'realdonald@white.gov'
         And I fill in 'Password' field with 'idontwannadatemydaughter'
         And I fill in 'Password confirmation' field with 'idontwannadatemydaughter'
         And I click 'Sign up'
-        Then I should see 'Hello, Donald Trump'
+        Then I should see 'Hello, realdonald@white.gov'
     
     Scenario: When I don't fill in the sign up form I get error messages
         When I click 'Sign up'
