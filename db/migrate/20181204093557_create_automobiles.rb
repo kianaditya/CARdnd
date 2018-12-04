@@ -3,8 +3,8 @@ class CreateAutomobiles < ActiveRecord::Migration[5.2]
     create_table :automobiles do |t|
       t.string :brand
       t.string :model
-      t.number :year
-      t.number :price
+      t.integer :year
+      t.integer :price
 
       t.timestamps
     end

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
+  resources :automobile, only: [:index]
+  root controller: :car_card, action: :index
   devise_for :users
-  resources :welcome, only: :index
-  root controller: :welcome, action: :index
 end
