@@ -8,7 +8,7 @@ Feature: User can sign up
         Given the following user exists
         |email          | password | password_confirmation |
         |real@email.com | password | password              |
-        And I visit the page
+        And I visit the landing page
         And I click 'Registration'
 
     Scenario: When I fill in the sign up form correctly, I can sign up
