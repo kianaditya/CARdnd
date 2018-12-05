@@ -12,9 +12,16 @@ Feature: User can sign up
         And I click 'Registration'
 
     Scenario: When I fill in the sign up form correctly, I can sign up
-        And I fill in 'Email' field with 'realdonald@white.gov'
+        When I fill in 'Email' field with 'realdonald@white.gov'
         And I fill in 'Password' field with 'idontwannadatemydaughter'
         And I fill in 'Password confirmation' field with 'idontwannadatemydaughter'
+        And I fill in 'First name' field with 'Don'
+        And I fill in 'Last name' field with 'Trump'
+        And I fill in 'Address' field with 'White House,Washington'
+        And I fill in 'Driving age' field with '9'
+        And I fill in 'Age' field with '60'
+        And I fill in 'About' field with 'OrangeMan'
+        And I fill in 'Phone' field with '1234455678'
         And I click 'Sign up'
         Then I should see 'Hello, realdonald@white.gov'
     
@@ -22,6 +29,11 @@ Feature: User can sign up
         When I click 'Sign up'
         Then I should see "Email can't be blank"
         And I should see "Password can't be blank"
+        And I should see "First name can't be blank"
+        And I should see "Last name can't be blank"
+        And I should see "Address can't be blank"
+        And I should see "Driving age can't be blank"
+        And I should see "Age can't be blank"
 
     Scenario: When Password and Password confirmation doesn't match I get error message
         When I fill in 'Password' field with 'password'

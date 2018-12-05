@@ -4,6 +4,10 @@ Given("the following user exists") do |table|
     end
 end
 
+Given("a user exists") do
+    FactoryBot.create(:user)
+end
+
 Given("I visit the landing page") do
     visit root_path
 end
