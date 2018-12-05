@@ -4,8 +4,17 @@ Feature: Visitor can see all cars available for rent
     In order to rent a car
     I want to see all the cars available for rent when I visit the site
 
-Scenario: View list of cars on landing page
-    Given I visit the landing page
-    Then I should see "BRAND MODEL"
-    And I should see "Year: 2002"
-    And I should see "Price: 100 SEK per day"
+    Background: 
+        Given The following cars exist
+            |brand|model|year|price|
+            |Volvo|V60|2010|200|
+            |Audi|Q2|2018|300|
+
+    Scenario: View list of cars on landing page
+        Given I visit the landing page
+        Then I should see "Vovlo V60"
+        And I should see "Year: 2010" within "Volvo V60"
+        And I should see "Price: 200 SEK per day" within "Volvo V60"
+        Then I should see "Audi Q2"
+        And I should see "Year: 2018" within "Audi Q2"
+        And I should see "Price: 300 SEK per day" within "Audi Q2"
