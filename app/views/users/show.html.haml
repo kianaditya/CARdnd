@@ -1,0 +1,9 @@
+- attr = ['firstname', 'lastname', 'address', 'about', 'drivingage', 'age', 'phone', 'email']
+
+- attr.each do |element|
+    %h4= element
+    -if @user[element]
+        %p= @user[element]
+    -else
+        %p blank
+    
