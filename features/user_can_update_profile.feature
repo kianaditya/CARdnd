@@ -22,6 +22,7 @@ Feature: User can update his/her profile
         And I fill in 'Phone' field with '1234455679'
         And I fill in 'Current password' field with 'password'
         And I click 'Update'
+        And I click 'View profile'
         Then I should see 'realdonald@wdonaldisthebest.com'
         And I should see 'Donnyboy'
         And I should see 'Trumpocius'
