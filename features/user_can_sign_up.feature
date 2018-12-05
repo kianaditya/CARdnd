@@ -12,7 +12,7 @@ Feature: User can sign up
         And I click 'Registration'
 
     Scenario: When I fill in the sign up form correctly, I can sign up
-        And I fill in 'Email' field with 'realdonald@white.gov'
+        When I fill in 'Email' field with 'realdonald@white.gov'
         And I fill in 'Password' field with 'idontwannadatemydaughter'
         And I fill in 'Password confirmation' field with 'idontwannadatemydaughter'
         And I fill in 'Firstname' field with 'Don'
