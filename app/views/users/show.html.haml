@@ -1,10 +1,27 @@
+=link_to 'Edit profile', edit_user_registration_path
+
 - attr = ['firstname', 'lastname', 'address', 'about', 'drivingage', 'age', 'phone', 'email']
 
-- attr.each do |element|
-    %h4= element
-    -if @user[element]
-        %p= @user[element]
-    -else
-        %p blank
-    
+%h4 Name:
+%p= "#{current_user.firstname} #{current_user.lastname}"
+
+%h4 Email:
+%p= current_user.email
+
+%h4 Address:
+%p= current_user.address
+
+%h4 Age:
+%p= current_user.age
+
+%h4 Driving Age:
+%p= current_user.drivingage
+
+%h4 Phone:
+%p= current_user.phone
+
+%h4 About:
+%p= current_user.about
+
+
 =link_to "Back" , root_path
