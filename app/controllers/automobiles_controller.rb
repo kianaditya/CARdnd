@@ -1,6 +1,6 @@
-class CarCardController < ApplicationController
+class AutomobilesController < ApplicationController
   def index
-    @automobile = Automobile.all
+    @automobiles = Automobile.all
   end
 
   def show
