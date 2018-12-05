@@ -3,10 +3,10 @@ FactoryBot.define do
     email {'real@mail.com'}
     password {'password'}
     password_confirmation {'password'}
-    firstname {'Greg'}
-    lastname {'Kallai'}
+    first_name {'Greg'}
+    last_name {'Kallai'}
     address {'OpenLab, Stockholm, Sweden'}
-    drivingage {9}
+    driving_age {9}
     age {31}
     about {'I really like drinking and driving'}
     phone {'123456789'}

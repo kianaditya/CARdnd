@@ -32,9 +32,9 @@ ActiveRecord::Schema.define(version: 2018_12_04_185533) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "firstname"
-    t.string "lastname"
-    t.integer "drivingage"
+    t.string "first_name"
+    t.string "last_name"
+    t.integer "driving_age"
     t.string "age"
     t.string "about"
     t.string "phone"

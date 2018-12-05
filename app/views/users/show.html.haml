@@ -1,27 +1,25 @@
 =link_to 'Edit profile', edit_user_registration_path
 
-- attr = ['firstname', 'lastname', 'address', 'about', 'drivingage', 'age', 'phone', 'email']
-
 %h4 Name:
-%p= "#{current_user.firstname} #{current_user.lastname}"
+%p= "#{@user.first_name} #{@user.last_name}"
 
 %h4 Email:
-%p= current_user.email
+%p= @user.email
 
 %h4 Address:
-%p= current_user.address
+%p= @user.address
 
 %h4 Age:
-%p= current_user.age
+%p= @user.age
 
 %h4 Driving Age:
-%p= current_user.drivingage
+%p= @user.driving_age
 
 %h4 Phone:
-%p= current_user.phone
+%p= @user.phone
 
 %h4 About:
-%p= current_user.about
+%p= @user.about
 
 
 =link_to "Back" , root_path

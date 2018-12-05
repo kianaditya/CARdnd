@@ -15,10 +15,10 @@ Feature: User can sign up
         When I fill in 'Email' field with 'realdonald@white.gov'
         And I fill in 'Password' field with 'idontwannadatemydaughter'
         And I fill in 'Password confirmation' field with 'idontwannadatemydaughter'
-        And I fill in 'Firstname' field with 'Don'
-        And I fill in 'Lastname' field with 'Trump'
+        And I fill in 'First name' field with 'Don'
+        And I fill in 'Last name' field with 'Trump'
         And I fill in 'Address' field with 'White House,Washington'
-        And I fill in 'Drivingage' field with '9'
+        And I fill in 'Driving age' field with '9'
         And I fill in 'Age' field with '60'
         And I fill in 'About' field with 'OrangeMan'
         And I fill in 'Phone' field with '1234455678'
@@ -29,10 +29,10 @@ Feature: User can sign up
         When I click 'Sign up'
         Then I should see "Email can't be blank"
         And I should see "Password can't be blank"
-        And I should see "Firstname can't be blank"
-        And I should see "Lastname can't be blank"
+        And I should see "First name can't be blank"
+        And I should see "Last name can't be blank"
         And I should see "Address can't be blank"
-        And I should see "Drivingage can't be blank"
+        And I should see "Driving age can't be blank"
         And I should see "Age can't be blank"
 
     Scenario: When Password and Password confirmation doesn't match I get error message
