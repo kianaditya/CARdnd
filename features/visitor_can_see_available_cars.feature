@@ -12,7 +12,8 @@ Feature: Visitor can see all cars available for rent
 
     Scenario: View list of cars on landing page
         Given I visit the landing page
-        Then I should see "Vovlo V60"
+        Then Show me the page
+        Then I should see "Volvo V60"
         And I should see "Year: 2010" within "Volvo V60"
         And I should see "Price: 200 SEK per day" within "Volvo V60"
         Then I should see "Audi Q2"
