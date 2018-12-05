@@ -26,3 +26,8 @@ Given("I am logged in as {string}") do |email|
     visit root_path
 end
 
+Given("The following cars exist") do |table|
+    table.hashes.each do |car|
+        FactoryBot.create(:automobile, car)
+    end
+end
