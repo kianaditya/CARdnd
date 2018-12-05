@@ -7,6 +7,7 @@ Feature: User can update his/her profile
     Background: 
         Given a user exists
         And I am logged in as 'real@mail.com'
+        And I click 'View profile'
         And I click 'Edit profile'
 
     Scenario: User successfully can update his or her profile
