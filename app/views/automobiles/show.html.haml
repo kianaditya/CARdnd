@@ -1,9 +1,11 @@
-
-.max-w-md.w-full.lg:flex
-    .h-48.lg:h-auto.lg:w-48.flex-none.bg-cover.rounded-t.lg:rounded-t-none.lg:rounded-l.text-center.overflow-hidden{style: "background-image: url('https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80')", title: "Red car"}
-    .border-r.border-b.border-l.border-grey-light.lg:border-l-0.lg:border-t.lg:border-grey-light.bg-white.rounded-b.lg:rounded-b-none.lg:rounded-r.p-4.flex.flex-col.justify-between.leading-normal
-        .mb-8{id: dom_id(@automobile)}
-            .text-black.font-bold.text-xl.mb-2= "#{@automobile.brand} #{@automobile.model}"
-            %p.text-grey-darker.text-base0="Year: #{@automobile.year}"
-            %p.text-grey-darker.text-base="Price: #{@automobile.price} SEK per day" 
+.flex.justify-center.mt-8.mr-8.ml-8
+    .max-w-lg.rounded.overflow-hidden.shadow-lg
+        %img.w-full{src: "https://www.christenseninstitute.org/wp-content/uploads/2016/08/nonconsumption-ford-model-t-1.jpg"}/
+        .px-6.py-4{id: dom_id(@automobile)}
+            .font-bold.text-xl.mb-2= "#{@automobile.brand} #{@automobile.model}"
+            %p.text-grey-darker.text-base
+            "Description"
+        .px-6.py-4
+            %span.inline-block.bg-grey-lighter.rounded-full.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2="Year: #{@automobile.year}"
+            %span.inline-block.bg-grey-lighter.rounded-full.px-3.py-1.text-sm.font-semibold.text-grey-darker="Price: #{@automobile.price} SEK per day"
 = link_to "Back" , root_path
