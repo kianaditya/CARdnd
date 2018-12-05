@@ -11,8 +11,6 @@ Feature: Visitor can see specific car information
         And I click "view"
 
     Scenario: View specific car on show page
-        Given I visit the show page
-        Then Show me the page
         Then I should see "Volvo V60"
         And I should see "Year: 2010" within "Volvo V60"
         And I should see "Price: 200 SEK per day" within "Volvo V60"

@@ -27,7 +27,7 @@ Given("I am logged in as {string}") do |email|
 end
 
 Given("The following cars exist") do |table|
-    table.hashes.each do |car|
-        FactoryBot.create(:automobile, car)
+    table.hashes.each do |automobile|
+        FactoryBot.create(:automobile, automobile)
     end
 end
