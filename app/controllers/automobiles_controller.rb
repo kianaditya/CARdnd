@@ -4,7 +4,12 @@ class AutomobilesController < ApplicationController
   end
 
   def new
-    @automobile = Automobile.new()
+    @automobile = Automobile.new
+  end
+
+  def create
+    @automobile = Automobile.create(automobile_params)
+    redirect_to automobiles_path
   end
 
   private
