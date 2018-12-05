@@ -10,6 +10,7 @@ class AutomobilesController < ApplicationController
   def create
     @automobile = Automobile.create(automobile_params)
     redirect_to automobiles_path
+    flash[:success] = 'Car succesfully added'
   end
 
   private
