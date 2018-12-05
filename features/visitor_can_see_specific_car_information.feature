@@ -4,11 +4,11 @@ Feature: Visitor can see specific car information
     I want to see more information about specific car I have selected
 
     Background:
-        Given The following car exists
-            | brand | model | year | price |
-            | Volvo | V60   | 2010 | 200   |
+        Given The following cars exist
+            |brand|model|year|price|
+            |Volvo|V60  |2010|200  |
         And I visit the landing page
-
+        And I click "view"
 
     Scenario: View specific car on show page
         Given I visit the show page
