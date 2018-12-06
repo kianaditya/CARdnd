@@ -11,11 +11,11 @@ Feature: Car owner can update car information
             | brand | model | year | price | user |
             | Volvo | V60   | 2010 | 200   | Greg |
             | Audi  | Q2    | 2018 | 300   | Greg |
+        And I click "View Profile"
+        And I click "Edit" within "Volvo V60"
 
     Scenario: Car owner can succesfully update car information
-            Given I click "View Profile"
-            When I click "Edit" within "Volvo V60"
-            And I fill in "Brand" field with "Toyota" 
+            Given I fill in "Brand" field with "Toyota" 
             And I fill in "Model" field with "Yaris"
             And I fill in "Year" field with "2002"
             And I fill in "Price" field with "700"

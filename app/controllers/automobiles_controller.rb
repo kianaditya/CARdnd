@@ -24,8 +24,11 @@ class AutomobilesController < ApplicationController
 
   def update
     @automobile = Automobile.find(params[:id])
-    @automobile.update(automobile_params)
-    redirect_to user_path(current_user)
+    -if @automobile.update(automobile_params)
+      redirect_to user_path(current_user)
+    else
+      render "edit"
+    end
   end
   
   private
