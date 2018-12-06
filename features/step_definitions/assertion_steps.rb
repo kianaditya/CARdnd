@@ -15,6 +15,10 @@ Then("I should see {string} within {string}") do |content, car|
     end
 end
 
+Then("I should be on the users page") do
+    expect(current_path).to eq users_path
+end
+
 Then("Show me the page") do
     save_and_open_page
 end

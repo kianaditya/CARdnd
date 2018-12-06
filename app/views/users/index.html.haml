@@ -1,5 +1,6 @@
 - @user.automobile.each do |car|
-    %h1= car["brand"]
-    %p= car["model"]
-    %p= car["year"]
-    %p= car["price"]
+    .max-w-md.w-full.lg:flex
+        .mb-8{id: dom_id(car)}
+            .text-black.font-bold.text-xl.mb-2= "#{car.brand} #{car.model}"
+            %p.text-grey-darker.text-base0="Year: #{car.year}"
+            %p.text-grey-darker.text-base="Price: #{car.price} SEK per day" 
