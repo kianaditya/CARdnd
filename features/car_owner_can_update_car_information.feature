@@ -5,7 +5,9 @@ Feature: Car owner can update car information
     I want to be able to update car information and/or remove car registration from the site
 
     Background:
-        Given a user exists
+        Given the following user exists
+            | email          |
+            | real@mail.com |
         And I am logged in as 'real@mail.com'
         And The following cars exist
             | brand | model | year | price | user |
