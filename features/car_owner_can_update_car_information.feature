@@ -20,3 +20,19 @@ Feature: Car owner can update car information
             And I fill in "Year" field with "2002"
             And I fill in "Price" field with "700"
             And I click "Update"
+            Then I should be on the profile page
+            And I should see "Toyota"
+            And I should see "Yaris"
+            And I should see "2002"
+            And I should see "700"
+    
+    Scenario: When I don't fill in update field I get an error message
+            When I fill in "Brand" field with "" 
+            And I fill in "Model" field with ""
+            And I fill in "Year" field with ""
+            And I fill in "Price" field with ""
+            And I click "Update"
+            Then I should see "Brand can't be blank"
+            And I should see "Model can't be blank"
+            And I should see "Year can't be blank"
+            And I should see "Price can't be blank"
