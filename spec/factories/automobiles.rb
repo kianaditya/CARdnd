@@ -4,5 +4,6 @@ FactoryBot.define do
     model { "V60" }
     year { 2010 }
     price { 500 }
+    user
   end
 end

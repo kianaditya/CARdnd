@@ -5,9 +5,9 @@ Feature: Visitor can see all cars available for rent
 
     Background:
         Given The following cars exist
-            | brand | model | year | price |
-            | Volvo | V60   | 2010 | 200   |
-            | Audi  | Q2    | 2018 | 300   |
+            | brand | model | year | price | user |
+            | Volvo | V60   | 2010 | 200   | Greg |
+            | Audi  | Q2    | 2018 | 300   | Greg |
 
     Scenario: View list of cars on landing page
         Given I visit the landing page

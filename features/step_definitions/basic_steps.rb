@@ -27,7 +27,9 @@ Given("I am logged in as {string}") do |email|
 end
 
 Given("The following cars exist") do |table|
-    table.hashes.each do |automobile|
-        FactoryBot.create(:automobile, automobile)
+    table.hashes.each do |car|
+        user = User.find_or_create_by(first_name: car[:user])
+        car.except!('user')
+        Automobile.create(car.merge(user: user))
     end
 end
