@@ -21,5 +21,5 @@ end
 
 Then("I am on the show car page") do
     expect(current_path).to eq automobile_path(@automobile)
-  end
+end
   
