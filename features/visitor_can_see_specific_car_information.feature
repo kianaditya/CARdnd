@@ -14,3 +14,4 @@ Feature: Visitor can see specific car information
         Then I should see "Volvo V60"
         And I should see "Year: 2010" within "Volvo V60"
         And I should see "Price: 200 SEK per day" within "Volvo V60"
+        And I should see "Rent this car"
