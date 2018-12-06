@@ -19,7 +19,14 @@ class AutomobilesController < ApplicationController
   end
 
   def edit
+    binding.pry
     @automobile = Automobile.find(params[:id])
+  end
+
+  def update
+    @automobile = Automobile.find(params[:id])
+    @automobile.update_attributes(automobile_params)
+    redirect_to user_path(current_user)
   end
   
   private

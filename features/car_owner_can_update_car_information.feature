@@ -13,7 +13,7 @@ Feature: Car owner can update car information
             | Audi  | Q2    | 2018 | 300   | Greg |
 
     Scenario: Car owner can succesfully update car information
-            Given I click "My Cars"
+            Given I click "View Profile"
             When I click "Edit" within "Volvo V60"
             And I fill in "Brand" field with "Toyota" 
             And I fill in "Model" field with "Yaris"
