@@ -1,0 +1,24 @@
+= form_with scope: @automobile, local: true do | form | 
+    - if @automobile.errors.any?
+        #error_explanation
+            %h2
+                = pluralize(@automobile.errors.count, "error")
+                prohibited
+                this car from being saved:
+            %ul
+                - @automobile.errors.full_messages.each do |msg|
+                    %li= msg
+    %p
+        = form.label :brand
+        = form.text_field :brand
+    %p
+        = form.label :model
+        = form.text_field :model
+    %p
+        = form.label :year
+        = form.text_field :year
+    %p
+        = form.label :price
+        = form.text_field :price
+    %p
+        = form.submit

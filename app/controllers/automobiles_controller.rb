@@ -15,6 +15,10 @@ class AutomobilesController < ApplicationController
     flash[:success] = 'Car succesfully added'
   end
 
+  def edit
+    @automobile = Automobile.find(params[:id])
+  end
+  
   private
 
   def automobile_params

@@ -5,7 +5,7 @@
             .text-black.font-bold.text-xl.mb-2= "#{car.brand} #{car.model}"
             %p.text-grey-darker.text-base0="Year: #{car.year}"
             %p.text-grey-darker.text-base="Price: #{car.price} SEK per day" 
-            =link_to "Edit", '#'
+            =link_to "Edit", edit_automobile_path(car)
             =link_to "Delete", '#'
 
 = link_to "Back", automobiles_path
