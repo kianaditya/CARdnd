@@ -8,7 +8,9 @@ class AutomobilesController < ApplicationController
   end
 
   def create
-    @automobile = Automobile.create(automobile_params)
+    @automobile = Automobile.new(automobile_params)
+    @automobile["user_id"] = current_user["id"]
+    @automobile.save
     redirect_to automobiles_path
     flash[:success] = 'Car succesfully added'
   end
