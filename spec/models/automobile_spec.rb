@@ -16,6 +16,10 @@ RSpec.describe Automobile, type: :model do
     it { is_expected.to validate_presence_of :price } 
   end
 
+  describe 'Associations' do
+    it { should belong_to(:user) }
+  end
+
   describe 'Factory' do
     it 'should have valid Factory' do
       expect(FactoryBot.create(:automobile)).to be_valid

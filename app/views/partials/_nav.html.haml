@@ -3,7 +3,6 @@
     %p Hello, #{current_user.email}
     =link_to "Logout", destroy_user_session_path, method: :delete
     =link_to "View Profile", user_path(current_user)
-    =link_to "My Cars", users_path
 -else
     =link_to "Registration" , new_user_registration_path
     =link_to "Login", new_user_session_path
