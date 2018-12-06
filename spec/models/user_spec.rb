@@ -22,6 +22,10 @@ RSpec.describe User, type: :model do
     it { is_expected.to validate_presence_of :age }
   end
 
+  describe 'Associations' do
+    it { should have_many(:automobile) }
+  end
+
   describe FactoryBot do 
     it 'should be valid' do
       expect(FactoryBot.create(:user)).to be_valid

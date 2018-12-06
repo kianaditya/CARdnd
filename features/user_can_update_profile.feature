@@ -7,8 +7,8 @@ Feature: User can update his/her profile
     Background: 
         Given a user exists
         And I am logged in as 'real@mail.com'
-        And I click 'View profile'
-        And I click 'Edit profile'
+        And I click 'View Profile'
+        And I click 'Edit Profile'
 
     Scenario: User successfully can update his or her profile
         When I fill in 'Email' field with 'realdonald@wdonaldisthebest.com'
@@ -23,7 +23,7 @@ Feature: User can update his/her profile
         And I fill in 'Phone' field with '1234455679'
         And I fill in 'Current password' field with 'password'
         And I click 'Update'
-        And I click 'View profile'
+        And I click 'View Profile'
         Then I should see 'realdonald@wdonaldisthebest.com'
         And I should see 'Donnyboy'
         And I should see 'Trumpocius'
