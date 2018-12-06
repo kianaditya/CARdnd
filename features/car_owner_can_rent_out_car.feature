@@ -9,7 +9,8 @@ Feature: Car owner can rent out car
         And I am logged in as 'real@mail.com'
 
     Scenario: Car owner can succesfully rent out car
-        When I click "Add Car"
+        When I click "My Cars"
+        And I click "Add Car"
         And I fill in "Brand" field with "Volvo"
         And I fill in "Model" field with "V60"
         And I fill in "Year" field with "2010"

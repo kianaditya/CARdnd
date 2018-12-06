@@ -28,6 +28,8 @@ end
 
 Given("The following cars exist") do |table|
     table.hashes.each do |car|
-        FactoryBot.create(:automobile, car)
+        user = User.find_or_create_by(first_name: car[:user])
+        car.except!('user')
+        Automobile.create(car.merge(user: user))
     end
 end
