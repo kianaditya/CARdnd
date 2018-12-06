@@ -31,7 +31,7 @@
             %p.text-grey-darker.text-base0="Year: #{car.year}"
             %p.text-grey-darker.text-base="Price: #{car.price} SEK per day" 
             =link_to "Edit", edit_automobile_path(car["id"])
-            =link_to "Delete", '#'
+            =link_to "Delete", automobile_path(car["id"]), method: :delete
 
 
 =link_to "Back" , root_path

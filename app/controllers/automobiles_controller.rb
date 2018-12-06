@@ -26,9 +26,16 @@ class AutomobilesController < ApplicationController
     @automobile = Automobile.find(params[:id])
     -if @automobile.update(automobile_params)
       redirect_to user_path(current_user)
+      flash[:success] = 'Car successfully updated'
     else
       render "edit"
     end
+  end
+
+  def destroy
+    @automobile = Automobile.find(params[:id])
+    @automobile.destroy
+    redirect_to automobiles_path
   end
   
   private
