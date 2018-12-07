@@ -53,7 +53,7 @@ end
 
 Given("I fill in the payment form") do
     card_no = '42'
-    stripe_iframe = find("iframe[name='__privateStripeFrame3']", visible: false)
+    stripe_iframe = find("iframe[name='__privateStripeFrame4']", visible: false)
     within_frame stripe_iframe do
       card_field = find_field('cardnumber')
       card_field.native.clear

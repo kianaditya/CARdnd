@@ -1,4 +1,5 @@
 = form_with url: rentals_path, local: true, id: 'rental_form' do |form|
+    = form.hidden_field :automobile_id, value: @car.id
     = form.label 'Dream card'
     
     #card-element
