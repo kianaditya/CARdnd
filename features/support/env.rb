@@ -25,12 +25,6 @@ Capybara.register_driver :chrome do |app|
    options: options
  )
 end
-Before '@stripe' do
- chrome_options << 'headless'
- StripeMock.start
-end
-After '@stripe' do 
- StripeMock.stop
-end
+
 Capybara.server = :puma
 Capybara.javascript_driver = :chrome

@@ -66,6 +66,6 @@ Given("I fill in the payment form") do
 end
 
 Given("I submit the payment form") do
-    pending # Write code here that turns the phrase above into concrete actions
+    click_on 'Submit Payment'
 end
   
