@@ -18,3 +18,11 @@ end
 Then("I should be on the profile page") do
     expect(current_path).to eq user_path(@user)
 end
+Then("Show me the page") do
+    save_and_open_page
+end
+
+Then("I am on the show car page") do
+    expect(current_path).to eq automobile_path(@automobile)
+end
+  

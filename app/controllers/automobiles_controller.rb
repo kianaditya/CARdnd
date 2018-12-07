@@ -2,6 +2,9 @@ class AutomobilesController < ApplicationController
   def index
     @automobiles = Automobile.all
   end
+  def show
+    @automobile = Automobile.find(params[:id])
+  end
 
   def new
     @automobile = Automobile.new
@@ -10,7 +13,8 @@ class AutomobilesController < ApplicationController
   def create
     @automobile = Automobile.new(automobile_params)
     @automobile["user_id"] = current_user["id"]
-    -if @automobile.save
+    @automobile.save
+    if @automobile.persisted?
       redirect_to user_path(current_user)
       flash[:success] = 'Car succesfully added'
     else
@@ -24,7 +28,7 @@ class AutomobilesController < ApplicationController
 
   def update
     @automobile = Automobile.find(params[:id])
-    -if @automobile.update(automobile_params)
+    if @automobile.update(automobile_params)
       redirect_to user_path(current_user)
       flash[:success] = 'Car successfully updated'
     else
@@ -41,7 +45,7 @@ class AutomobilesController < ApplicationController
   private
 
   def automobile_params
-    params.require(:automobile).permit(:brand, :model, :year, :price, :image)
+    params.require(:automobile).permit(:brand, :model, :year, :price, :engine, :description, :image)
   end
 
 end

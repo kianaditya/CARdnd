@@ -6,7 +6,7 @@ Feature: Car owner can update car information
 
     Background:
         Given the following user exists
-            | email          |
+            | email         |
             | real@mail.com |
         And I am logged in as 'real@mail.com'
         And The following cars exist

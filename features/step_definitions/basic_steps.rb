@@ -34,12 +34,12 @@ Given("The following cars exist") do |table|
     end
 end
 
-When("I click {string} within {string}") do |button, car|
-    selected_car = car.split.first
-    automobile = Automobile.find_by(brand: selected_car)
+Given("I click {string} within {string}") do |element, card|
+    selected_card = card.split.first
+    automobile = Automobile.find_by(brand: selected_card)
     dom_section = "#automobile_#{automobile.id}"
     within(dom_section) do
-        click_on button
+        click_on element
     end
 end
 

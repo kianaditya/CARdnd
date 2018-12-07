@@ -1,26 +1,26 @@
 -if @user == current_user
     =link_to 'Edit Profile', edit_user_registration_path
 
-%h4 Name:
-%p= "#{@user.first_name} #{@user.last_name}"
+    %h4 Name:
+    %p= "#{@user.first_name} #{@user.last_name}"
 
-%h4 Email:
-%p= @user.email
+    %h4 Email:
+    %p= @user.email
 
-%h4 Address:
-%p= @user.address
+    %h4 Address:
+    %p= @user.address
 
-%h4 Age:
-%p= @user.age
+    %h4 Age:
+    %p= @user.age
 
-%h4 Driving Age:
-%p= @user.driving_age
+    %h4 Driving Age:
+    %p= @user.driving_age
 
-%h4 Phone:
-%p= @user.phone
+    %h4 Phone:
+    %p= @user.phone
 
-%h4 About:
-%p= @user.about
+    %h4 About:
+    %p= @user.about
 
 %h4=link_to "Add Car", new_automobile_path
 - @user.automobile.each do |car|
@@ -31,7 +31,8 @@
             %p.text-grey-darker.text-base="Price: #{car.price} SEK per day" 
             =link_to "Edit", edit_automobile_path(car["id"])
             =link_to "Delete", automobile_path(car["id"]), method: :delete
-            =image_tag car.image, {class: "w-64 h-64"}
+            - if car.image.attached?
+                =image_tag car.image, {class: "w-64 h-64"}
 
 
 =link_to "Back" , root_path
