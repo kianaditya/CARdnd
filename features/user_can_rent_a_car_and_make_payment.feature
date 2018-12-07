@@ -1,3 +1,4 @@
+@javascript
 Feature: User can select a car to rent and make payment
 
     As a car renter
@@ -13,15 +14,15 @@ Feature: User can select a car to rent and make payment
             | email                 | first_name |
             | owner@email.com       | Greg       |
             | renter@email.com      | Don        |
-         And the following cars exist
+         And The following cars exist
             | brand | model | year | price | user |
             | Volvo | V60   | 2010 | 200   | Greg |
             | BMW   | BM56  | 2020 | 700   | Greg |
          And I am logged in as "renter@email.com"
 
     Scenario: User can pay rent after selecting a car
-        Given I click on "Dream" within "BMW"
-        And I click on "Drive this car"
+        Given I click "Dream" within "BMW"
+        And I click "Drive this car"
         And I wait 3 seconds
         And I fill in the payment form
         And I submit the payment form 

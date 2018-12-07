@@ -46,3 +46,7 @@ end
 Given("I attach an image to {string}") do |image|
     attach_file("#{image}_image", "#{::Rails.root}/spec/fixtures/dummy_image.jpg")
 end
+
+Given("I wait {int} seconds") do |int|
+    sleep int
+end
