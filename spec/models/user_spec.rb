@@ -25,7 +25,7 @@ RSpec.describe User, type: :model do
   describe 'Associations' do
     it { should have_many(:automobile) }
   end
-
+  
   describe FactoryBot do 
     it 'should be valid' do
       expect(FactoryBot.create(:user)).to be_valid

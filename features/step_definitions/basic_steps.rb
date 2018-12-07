@@ -42,4 +42,7 @@ Given("I click {string} within {string}") do |element, card|
         click_on element
     end
 end
-  
+
+Given("I attach an image to {string}") do |image|
+    attach_file("#{image}_image", "#{::Rails.root}/spec/fixtures/dummy_image.jpg")
+end

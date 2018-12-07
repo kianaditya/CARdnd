@@ -24,6 +24,8 @@
         = form.label :price
         %br/
         = form.text_field :price
+    
+   
     %p
         = form.label :engine
         %br/
@@ -33,5 +35,9 @@
         %br/
         = form.text_area :description
         
+    %p
+        = form.label :image
+        %br/
+        = form.file_field :image
     %p
         = form.submit "Save Car"
