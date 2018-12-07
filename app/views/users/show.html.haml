@@ -22,7 +22,6 @@
 %h4 About:
 %p= @user.about
 
-
 %h4=link_to "Add Car", new_automobile_path
 - @user.automobile.each do |car|
     .max-w-md.w-full.lg:flex
@@ -32,6 +31,8 @@
             %p.text-grey-darker.text-base="Price: #{car.price} SEK per day" 
             =link_to "Edit", edit_automobile_path(car["id"])
             =link_to "Delete", automobile_path(car["id"]), method: :delete
+            %p= car.image 
+            /=image_tag car.image
 
 
 =link_to "Back" , root_path

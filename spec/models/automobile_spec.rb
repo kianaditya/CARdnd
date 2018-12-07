@@ -20,6 +20,13 @@ RSpec.describe Automobile, type: :model do
     it { should belong_to(:user) }
   end
 
+  describe 'Attachments' do
+    it 'is valid' do
+      subject.image.attach(io: File.open(fixture_path + '/dummy_image.jpg'), filename: 'attachment.jpg', content_type: 'image/jpg')
+      expect(subject.image).to be_attached
+    end
+  end
+
   describe 'Factory' do
     it 'should have valid Factory' do
       expect(FactoryBot.create(:automobile)).to be_valid
