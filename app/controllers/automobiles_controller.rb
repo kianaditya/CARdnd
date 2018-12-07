@@ -13,7 +13,8 @@ class AutomobilesController < ApplicationController
   def create
     @automobile = Automobile.new(automobile_params)
     @automobile["user_id"] = current_user["id"]
-    if @automobile.save
+    @automobile.save
+    if @automobile.persisted?
       redirect_to user_path(current_user)
       flash[:success] = 'Car succesfully added'
     else
