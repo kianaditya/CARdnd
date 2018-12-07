@@ -22,7 +22,6 @@ Feature: User can sign up
         And I fill in 'Age' field with '60'
         And I fill in 'About' field with 'OrangeMan'
         And I fill in 'Phone' field with '1234455678'
-        And I attach an image to 'user'
         And I click 'Sign up'
         Then I should see 'Hello, realdonald@white.gov'
     

@@ -1,18 +1,18 @@
-Feature: User can upload image
+Feature: Car owner can upload image
 
-    As a user
-    In order to rent a car
-    I want to be able to add and see pictures about the cars
+    As a car owner
+    In order to show more details about the car
+    I want to add a picture of my car
 
-    Background: 
+    Background:
         Given the following user exists
-            | email          |
+            | email         |
             | real@mail.com |
         And I am logged in as 'real@mail.com'
         And I click "View Profile"
         And I click "Add Car"
 
-    Scenario: User can successfully upload image into car card
+    Scenario: Car owner can successfully upload image during car registration
         Given I fill in "Brand" field with "Volvo"
         And I fill in "Model" field with "V60"
         And I fill in "Year" field with "2010"
