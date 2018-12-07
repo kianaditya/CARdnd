@@ -1,37 +1,37 @@
 -if @user == current_user
     =link_to 'Edit Profile', edit_user_registration_path
 
-%h4 Name:
-%p= "#{@user.first_name} #{@user.last_name}"
+    %h4 Name:
+    %p= "#{@user.first_name} #{@user.last_name}"
 
-%h4 Email:
-%p= @user.email
+    %h4 Email:
+    %p= @user.email
 
-%h4 Address:
-%p= @user.address
+    %h4 Address:
+    %p= @user.address
 
-%h4 Age:
-%p= @user.age
+    %h4 Age:
+    %p= @user.age
 
-%h4 Driving Age:
-%p= @user.driving_age
+    %h4 Driving Age:
+    %p= @user.driving_age
 
-%h4 Phone:
-%p= @user.phone
+    %h4 Phone:
+    %p= @user.phone
 
-%h4 About:
-%p= @user.about
+    %h4 About:
+    %p= @user.about
 
 
-%h4=link_to "Add Car", new_automobile_path
-- @user.automobile.each do |car|
-    .max-w-md.w-full.lg:flex
-        .mb-8{id: dom_id(car)}
-            .text-black.font-bold.text-xl.mb-2= "#{car.brand} #{car.model}"
-            %p.text-grey-darker.text-base0="Year: #{car.year}"
-            %p.text-grey-darker.text-base="Price: #{car.price} SEK per day" 
-            =link_to "Edit", '#'
-            =link_to "Delete", '#'
+    %h4=link_to "Add Car", new_automobile_path
+    - @user.automobile.each do |car|
+        .max-w-md.w-full.lg:flex
+            .mb-8{id: dom_id(car)}
+                .text-black.font-bold.text-xl.mb-2= "#{car.brand} #{car.model}"
+                %p.text-grey-darker.text-base0="Year: #{car.year}"
+                %p.text-grey-darker.text-base="Price: #{car.price} SEK per day" 
+                =link_to "Edit", edit_automobile_path(car["id"])
+                =link_to "Delete", automobile_path(car["id"]), method: :delete
 
 
 =link_to "Back" , root_path

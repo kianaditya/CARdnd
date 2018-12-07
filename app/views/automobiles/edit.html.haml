@@ -1,37 +1,24 @@
-= form_with scope: :automobile, url: automobiles_path, local: true do | form |
+= form_with(model: @automobile, local: true) do | form | 
     - if @automobile.errors.any?
         #error_explanation
             %h2
                 = pluralize(@automobile.errors.count, "error")
                 prohibited
-                this automobile from being saved:
+                this car from being saved:
             %ul
                 - @automobile.errors.full_messages.each do |msg|
                     %li= msg
     %p
         = form.label :brand
-        %br/
         = form.text_field :brand
     %p
         = form.label :model
-        %br/
         = form.text_field :model
     %p
         = form.label :year
-        %br/
         = form.text_field :year
     %p
         = form.label :price
-        %br/
         = form.text_field :price
     %p
-        = form.label :engine
-        %br/
-        = form.text_field :engine
-    %p
-        = form.label :description
-        %br/
-        = form.text_area :description
-        
-    %p
-        = form.submit "Save Car"
+        = form.submit
