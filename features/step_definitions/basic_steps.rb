@@ -42,3 +42,7 @@ When("I click {string} within {string}") do |button, car|
         click_on button
     end
 end
+
+Given("I attach a file") do
+    attach_file('automobile_image', "#{::Rails.root}/spec/fixtures/dummy_image.jpg")
+end

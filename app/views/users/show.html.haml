@@ -31,8 +31,7 @@
             %p.text-grey-darker.text-base="Price: #{car.price} SEK per day" 
             =link_to "Edit", edit_automobile_path(car["id"])
             =link_to "Delete", automobile_path(car["id"]), method: :delete
-            %p= car.image 
-            /=image_tag car.image
+            =image_tag car.image, {class: "w-64 h-64"}
 
 
 =link_to "Back" , root_path
