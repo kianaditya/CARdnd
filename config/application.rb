@@ -16,5 +16,7 @@ module CARdnd
       generate.controller_specs false
       generate.system_tests false
     end
+    config.stripe.publishable_key = 'pk_test_ETD56NelyhBhZo8IOqowro6C'
+    config.stripe.secret_key = Rails.application.credentials.stripe[:secret_key]
   end
 end

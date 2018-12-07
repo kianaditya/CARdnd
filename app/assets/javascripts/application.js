@@ -15,6 +15,7 @@ const stripeTokenHandler = (token) => {
 }
 
 const initiateStripe = () => {
+    console.log('hej')
     const stripe = Stripe('pk_test_ETD56NelyhBhZo8IOqowro6C');
     const elements = stripe.elements();
     const card = elements.create('card')
@@ -30,7 +31,6 @@ const initiateStripe = () => {
 
 document.addEventListener('turbolinks:load', ()=>{
     let stripeForm = document.getElementById('rental_form')
-
     if (stripeForm){
         initiateStripe()
     }
