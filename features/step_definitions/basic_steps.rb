@@ -50,3 +50,7 @@ end
 Given("I wait {int} seconds") do |int|
     sleep int
 end
+
+Given("I fill in the payment form") do
+    
+end
