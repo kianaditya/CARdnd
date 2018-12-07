@@ -25,6 +25,15 @@ RSpec.describe User, type: :model do
   describe 'Associations' do
     it { should have_many(:automobile) }
   end
+  
+  describe 'Attachments' do
+    it 'is valid' do
+      subject.image.attach(io: File.open(fixture_path + '/dummy_image.jpg'), filename: 'attachment.jpg', content_type: 'image/jpg')
+      expect(subject.image).to be_attached
+    end
+  end
+
+
 
   describe FactoryBot do 
     it 'should be valid' do

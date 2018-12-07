@@ -17,5 +17,5 @@ Feature: User can upload image
         And I fill in "Model" field with "V60"
         And I fill in "Year" field with "2010"
         And I fill in "Price" field with "200"
-        And I attach a file
+        And I attach an image to "automobile"
         And I click "Save Car"

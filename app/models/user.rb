@@ -4,4 +4,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   validates_presence_of :first_name, :last_name, :address, :driving_age, :age
+
+  has_one_attached :image
 end
