@@ -21,6 +21,9 @@
     %h4 About:
     %p= @user.about
 
+= render partial: 'partials/owner_history'
+= render partial: 'partials/renter_history' 
+
 %h4=link_to "Add Car", new_automobile_path
 - @user.automobile.each do |car|
     .max-w-md.w-full.lg:flex

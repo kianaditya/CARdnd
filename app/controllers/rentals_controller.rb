@@ -28,6 +28,10 @@ class RentalsController < ApplicationController
         end
     end
 
+    def show
+        @current_user = User.find(params[:current_user])
+    end
+
     private
     def get_token(params)
         Rails.env.test? ? generate_test_token : params['stripeToken']
@@ -35,5 +39,8 @@ class RentalsController < ApplicationController
 
     def generate_test_token
         StripeMock.create_test_helper.generate_card_token
+    end
+    def rental_params
+        
     end
 end
