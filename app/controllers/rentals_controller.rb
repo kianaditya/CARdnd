@@ -20,6 +20,7 @@ class RentalsController < ApplicationController
 
         if charge[:paid]
             car.update(rental_status: true)
+            Rental.create(automobile_id: car.id, user_id: current_user.id)
             redirect_to root_path
             flash[:success]= "Your purchase is successful"
         else
