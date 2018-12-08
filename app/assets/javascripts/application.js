@@ -16,7 +16,7 @@ const stripeTokenHandler = (token) => {
 
 const initiateStripe = () => {
     console.log('hej')
-    const stripe = Stripe('pk_test_ETD56NelyhBhZo8IOqowro6C');
+    const stripe = Stripe('pk_test_QicERB8w3kyqaYW3hUUQylRH');
     const elements = stripe.elements();
     const card = elements.create('card')
     card.mount('#card-element');
