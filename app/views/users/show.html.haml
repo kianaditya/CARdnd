@@ -31,6 +31,11 @@
             .text-black.font-bold.text-xl.mb-2= "#{car.brand} #{car.model}"
             %p.text-grey-darker.text-base0="Year: #{car.year}"
             %p.text-grey-darker.text-base="Price: #{car.price} SEK per day" 
+            - if car.rental_status?
+                Currently rented
+            -else
+                Available for rent
+            %Br/
             =link_to "Edit", edit_automobile_path(car["id"])
             =link_to "Delete", automobile_path(car["id"]), method: :delete
             - if car.image.attached?
