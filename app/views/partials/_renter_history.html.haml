@@ -1,3 +1,4 @@
 %h1 Renter's History
 -rent = Rental.find_by(user_id: current_user.id)
-=rent.user.first_name
+-if rent
+    =rent.first_name
