@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Bovverskin/CARdnd/app/models/user.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/models/user.rb": [
         1,
         1,
         1,
@@ -10,12 +10,12 @@
         1,
         null
       ],
-      "/Users/Bovverskin/CARdnd/app/models/application_record.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/Bovverskin/CARdnd/app/helpers/application_helper.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/helpers/application_helper.rb": [
         1,
         1,
         0,
@@ -27,81 +27,82 @@
         null,
         null
       ],
-      "/Users/Bovverskin/CARdnd/app/models/automobile.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/models/automobile.rb": [
         1,
         1,
         1,
         1,
         null
       ],
-      "/Users/Bovverskin/CARdnd/app/mailers/application_mailer.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/Bovverskin/CARdnd/app/jobs/application_job.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/Users/Bovverskin/CARdnd/app/controllers/application_controller.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/controllers/application_controller.rb": [
         0,
         0,
         null,
         0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/Bovverskin/CARdnd/app/controllers/rentals_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/Bovverskin/CARdnd/app/controllers/users_controller.rb": [
         0,
         0,
         0,
         0,
         0
       ],
-      "/Users/Bovverskin/CARdnd/app/controllers/automobiles_controller.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/controllers/rentals_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/controllers/users_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/controllers/automobiles_controller.rb": [
         0,
         0,
         0,
@@ -154,19 +155,19 @@
         null,
         0
       ],
-      "/Users/Bovverskin/CARdnd/app/channels/application_cable/connection.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/Bovverskin/CARdnd/app/channels/application_cable/channel.rb": [
+      "/Users/johannaanden/Craft_Academy/CARdnd/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ]
     },
-    "timestamp": 1544274277
+    "timestamp": 1544284775
   }
 }

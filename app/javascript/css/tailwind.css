@@ -4,5 +4,12 @@
 
 @tailwind components;
 
-
 @tailwind utilities;
+body {
+    font-family: 'Kanit', sans-serif;
+}
+.car_card {
+    display: inline-block;
+    justify-content: center;
+    margin: 25px;
+}
