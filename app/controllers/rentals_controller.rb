@@ -19,7 +19,8 @@ class RentalsController < ApplicationController
         )
 
         if charge[:paid]
-            redirect_to root_path, notice: "Your dream is now reality!"
+            redirect_to root_path
+            flash[:success]= "Your purchase is successful"
         else
             redirect_to root_path, notice: "Charge declined!"
         end

@@ -25,7 +25,5 @@ Feature: User can select a car to rent and make payment
         And I click "Drive this car"
         And I wait 3 seconds
         And I fill in the payment form
-        And I submit the payment form 
-        Then I should see " Your dream is now reality!"
-
-    
+        And I submit the payment form
+        Then I should see "Your purchase is successful"
