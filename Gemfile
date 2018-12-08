@@ -16,6 +16,8 @@ gem 'devise'
 gem 'haml'
 gem 'haml-rails'
 gem 'stripe-rails'
+gem 'webpacker', '~> 3.5'
+gem 'tailwindcss', git: 'https://github.com/IcaliaLabs/tailwindcss-rails.git'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
