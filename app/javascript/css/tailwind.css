@@ -10,6 +10,24 @@ body {
 }
 .car_card {
     display: inline-block;
-    justify-content: center;
     margin: 25px;
+    justify-content: center;
+}
+
+.nav_bar {
+    height: 75px;
+    background-color: #F8DB4A;
+    position: relative;
+}
+
+.notice_message{
+
+}
+
+.nav_bar_links:link,
+nav_bar_links:visited,
+nav_bar_links:active{
+    float: right;
+    color: red;
+    
 }
