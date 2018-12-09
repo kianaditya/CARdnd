@@ -1,8 +1,11 @@
-= notice || alert
--if user_signed_in?
-    %p Hello, #{current_user.email}
-    =link_to "Logout", destroy_user_session_path, method: :delete
-    =link_to "View Profile", user_path(current_user)
--else
-    =link_to "Registration" , new_user_registration_path
-    =link_to "Login", new_user_session_path
+.nav_bar
+    .notice_message
+        = notice || alert
+    .nav_bar_links
+        -if user_signed_in?
+            %p Hello, #{current_user.email}
+            =link_to "View Profile", user_path(current_user)
+            =link_to "Logout", destroy_user_session_path, method: :delete
+        -else
+            =link_to "Registration" , new_user_registration_path
+            =link_to "Login", new_user_session_path
