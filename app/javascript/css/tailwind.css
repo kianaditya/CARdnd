@@ -39,6 +39,7 @@ body {
     height: 75px;
     background-color: #F8DB4A;
     position: relative;
+    border-bottom: 1px solid black;
 }
 
 .nav_bar_links:link,
