@@ -1,6 +1,6 @@
-.flex.justify-center.mt-12
+.flex.justify-center.mt-8.mb-8
     %h2.mr-4.underline Sign up
-    .border.border-solid.w-30p
+    .border.border-solid.w-30p.bg-grey-dark
         = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
             = devise_error_messages!
             .field
@@ -46,6 +46,6 @@
                 = f.label :phone
                 %br/
                 = f.text_field :phone, autocomplete: "phone"
-            .button.shadow.bg-yellow.hover.bg-yellow-light.focus.shadow-outline.focus.outline-none.text-white.font-bold.py-2.px-4.rounded.mt-2
+            .button.shadow.bg-grey.hover.bg-grey-light.focus.shadow-outline.focus.outline-none.text-white.font-bold.py-2.px-4.rounded.mt-2
                 = f.submit "Sign up"
         = render "devise/shared/links"
