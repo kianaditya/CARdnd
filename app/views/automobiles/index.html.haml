@@ -2,7 +2,7 @@
   = image_tag "background_yellow_logo.png"
 .car_div.flex.flex-wrap.justify-around
   - @automobiles.each do |car|
-    .car_card.rounded-lg.w-30p.m-4.shadow-lg
+    .bg-grey-light.rounded-lg.w-30p.m-4.shadow-lg
       .w-full.h-25p.flex.flex-col.rounded.shadow-lg
         - if car.image.attached?
           =image_tag car.image
