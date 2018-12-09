@@ -8,18 +8,13 @@
 
 body {
     font-family: 'Kanit', sans-serif;
-    /*background-color: #F8DB4A;*/
     margin: 0px;
     padding: 0px;
 }
 
-.car_card {
-    background-color: #F8DB4A;
-}
-
 .nav_bar {
     height: 75px;
-    background-color: #F8DB4A;
+    background-color:#1F9D55;
     position: relative;
     border-bottom: 1px solid black;
 }
@@ -29,6 +24,6 @@ body {
     color: gray;
 }
 .indexlinks:hover{
-    background-color: orange;
+    background-color: #8795a1;
     color: white;
 }
