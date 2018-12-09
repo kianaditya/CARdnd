@@ -1,20 +1,25 @@
 .header
   = image_tag "background_yellow_logo.png"
-.car_div
+.car_div.flex.flex-wrap.justify-around
   - @automobiles.each do |car|
-    .car_card
-      .max-w-md.w-full.lg.flex.content-around.rounded.overflow-hidden.shadow-lg
-        .h-32.lg.h-auto.lg.w-32.flex-none.bg-cover.rounded-t.lg.rounded-t-none.lg.rounded-l.text-center.overflow-hidden{style: "background-image: url('https://images.unsplash.com/photo-1532974297617-c0f05fe48bff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80')", title: "Red car"}
+    .car_card.rounded-lg.w-30p.m-4.shadow-lg
+      .w-full.h-25p.flex.flex-col.rounded.shadow-lg
+        - if car.image.attached?
+          =image_tag car.image
+        - else
+          =image_tag "default.jpg"
         .border-transparent.lg.pl-2
           .mb-8{id: dom_id(car)}
             %h2.mt-3= "#{car.brand} #{car.model}"
             %br
             .rent_status.mt-3
               -if car.rental_status == true
-                %p Rented out
+                %h4 Rented out
               -else
-                %p Available for rent
-            %span.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2.mt-5="Price: #{car.price} SEK per day"
-            %span.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2="Year: #{car.year}"
-            %span.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2= link_to "Dream", automobile_path(car)
+                %h4 Available for rent
+            %span.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2.mt-4="Price: #{car.price} SEK per day"
+            %span.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2.mt-4="Year: #{car.year}"
+            %br/
+            %span.indexlinks.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2.mt-4= link_to "Dream", automobile_path(car), {class: "indexlinks"}
+            %span.indexlinks.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2.mt-4= link_to "Owner: #{car.user.first_name}", user_path(car.user.id), {class: "indexlinks"}
             

@@ -5,34 +5,16 @@
 @tailwind components;
 
 @tailwind utilities;
-. {
+
+body {
+    font-family: 'Kanit', sans-serif;
+    /*background-color: #F8DB4A;*/
     margin: 0px;
     padding: 0px;
 }
-body {
-    font-family: 'Kanit', sans-serif;
-    background-color: #F8DB4A;
-}
 
-.car_div {
-    background-color: #F8DB4A;
-    margin-left: 150px;
-    margin-right: 150px;
-    display: flex;
-    /*flex: none;*/
-    flex-wrap: wrap;
-    align-content: space-around;
-}
 .car_card {
-    display: inline-block;
-    /*margin: 25px;*/
-    margin: 20px;
-    justify-content: center;
-    /*padding-left: 8px;
-    padding-right: 8px;*/
-    background-color: #ffffff;
-    border-radius: 5px;
-    flex: none;
+    background-color: #F8DB4A;
 }
 
 .nav_bar {
@@ -41,10 +23,11 @@ body {
     position: relative;
 }
 
-.nav_bar_links:link,
-nav_bar_links:visited,
-nav_bar_links:active{
-    float: right;
-    color: red;
-    
+.indexlinks{
+    text-decoration: none;
+    color: gray;
+}
+.indexlinks:hover{
+    background-color: orange;
+    color: white;
 }

@@ -1,25 +1,25 @@
 -if @user == current_user
     =link_to 'Edit Profile', edit_user_registration_path
-    %h4 Name:
-    %p= "#{@user.first_name} #{@user.last_name}"
+%h4 Name:
+%p= "#{@user.first_name} #{@user.last_name}"
 
-    %h4 Email:
-    %p= @user.email
+%h4 Email:
+%p= @user.email
 
-    %h4 Address:
-    %p= @user.address
+%h4 Address:
+%p= @user.address
 
-    %h4 Age:
-    %p= @user.age
+%h4 Age:
+%p= @user.age
 
-    %h4 Driving Age:
-    %p= @user.driving_age
+%h4 Driving Age:
+%p= @user.driving_age
 
-    %h4 Phone:
-    %p= @user.phone
+%h4 Phone:
+%p= @user.phone
 
-    %h4 About:
-    %p= @user.about
+%h4 About:
+%p= @user.about
 
 = render partial: 'partials/owner_history'
 = render partial: 'partials/renter_history' 
