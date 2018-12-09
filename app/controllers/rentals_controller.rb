@@ -20,11 +20,16 @@ class RentalsController < ApplicationController
 
         if charge[:paid]
             car.update(rental_status: true)
+            Rental.create(automobile_id: car.id, user_id: current_user.id)
             redirect_to root_path
             flash[:success]= "Your purchase is successful"
         else
             redirect_to root_path, notice: "Charge declined!"
         end
+    end
+
+    def show
+        @current_user = User.find(params[:current_user])
     end
 
     private
@@ -34,5 +39,8 @@ class RentalsController < ApplicationController
 
     def generate_test_token
         StripeMock.create_test_helper.generate_card_token
+    end
+    def rental_params
+        
     end
 end
