@@ -26,5 +26,13 @@ Feature: User can select a car to rent and make payment
         And I wait 3 seconds
         And I fill in the payment form
         And I submit the payment form
+        And I wait 3 seconds
         Then I should see "Your purchase is successful"
-        Then I should see "The car is rented out"
+        And I should see "The car is rented out"
+        And I click "View Profile"
+        Then I should see "BMW BM56 700 SEK from: Greg"
+        And I should see "Your total spending: 700 SEK"
+        And I am logged in as "owner@email.com"
+        And I click "View Profile"
+        Then I should see "BMW BM56 700 SEK to: Don"
+        And I should see "Your total earnings: 700 SEK"
