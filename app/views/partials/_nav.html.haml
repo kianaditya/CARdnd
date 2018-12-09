@@ -2,6 +2,7 @@
     .notice_message
         = notice || alert
     .nav_bar_links
+        = link_to "Home" , root_path
         -if user_signed_in?
             %p Hello, #{current_user.email}
             =link_to "View Profile", user_path(current_user)
