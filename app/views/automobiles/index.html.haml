@@ -21,5 +21,4 @@
             %span.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2.mt-4="Year: #{car.year}"
             %br/
             %span.indexlinks.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2.mt-4= link_to "Dream", automobile_path(car), {class: "indexlinks"}
-            %span.indexlinks.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2.mt-4= link_to "Owner: #{car.user.first_name}", user_path(car.user.id), {class: "indexlinks"}
-            
+            %span.indexlinks.inline-block.bg-grey-lighter.rounded.border.px-3.py-1.text-sm.font-semibold.text-grey-darker.mr-2.mt-4= link_to "Check out the Owner", user_path(car.user.id), {class: "indexlinks"}

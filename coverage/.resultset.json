@@ -1,7 +1,8 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/models/user.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/models/user.rb": [
+        1,
         1,
         1,
         1,
@@ -10,99 +11,114 @@
         1,
         null
       ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/helpers/application_helper.rb": [
-        1,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/models/automobile.rb": [
-        1,
-        1,
+      "/Users/GergKllai1/craftacademy/CARdnd/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/mailers/application_mailer.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/helpers/application_helper.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/GergKllai1/craftacademy/CARdnd/app/models/automobile.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/GergKllai1/craftacademy/CARdnd/app/models/rental.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/GergKllai1/craftacademy/CARdnd/app/mailers/application_mailer.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/jobs/application_job.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/jobs/application_job.rb": [
         0,
         0
       ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/controllers/application_controller.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/controllers/application_controller.rb": [
         0,
         0,
         null,
         0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/controllers/rentals_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/controllers/users_controller.rb": [
         0,
         0,
         0,
         0,
         0
       ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/controllers/automobiles_controller.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/controllers/rentals_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0
+      ],
+      "/Users/GergKllai1/craftacademy/CARdnd/app/controllers/users_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/GergKllai1/craftacademy/CARdnd/app/controllers/automobiles_controller.rb": [
         0,
         0,
         0,
@@ -155,19 +171,19 @@
         null,
         0
       ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/channels/application_cable/connection.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/channels/application_cable/connection.rb": [
         0,
         0,
         0,
         0
       ],
-      "/Users/johannaanden/Craft_Academy/CARdnd/app/channels/application_cable/channel.rb": [
+      "/Users/GergKllai1/craftacademy/CARdnd/app/channels/application_cable/channel.rb": [
         0,
         0,
         0,
         0
       ]
     },
-    "timestamp": 1544349374
+    "timestamp": 1544364085
   }
 }

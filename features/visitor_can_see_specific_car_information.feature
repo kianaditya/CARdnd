@@ -4,13 +4,14 @@ Feature: Visitor can see specific car information
     I want to see more information about specific car I have selected
 
     Background:
+        Given the following user exists
+            | first_name |
+            | Greg       |
         Given The following cars exist
-            |brand|model|year|price|description |engine|rental_status|
-            |Volvo|V60  |2010|200  |Great car!  |V6    |false        |
-            |BMW  |E-6  |2011|500  |Almost a car|V8    |true         |
-
+            | brand | model | year | price | description  | engine | rental_status | user |
+            | Volvo | V60   | 2010 | 200   | Great car!   | V6     | false         | Greg |
+            | BMW   | E-6   | 2011 | 500   | Almost a car | V8     | true          | Greg |
         And I visit the landing page
-        
 
     Scenario: View specific car on show page - see rent this car link if available for rental
         Then I should see "Volvo V60"
