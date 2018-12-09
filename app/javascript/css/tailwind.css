@@ -5,13 +5,23 @@
 @tailwind components;
 
 @tailwind utilities;
+. {
+    margin: 0px;
+    padding: 0px;
+}
 body {
     font-family: 'Kanit', sans-serif;
+    background-color: #F8DB4A;
+
 }
 .car_card {
     display: inline-block;
     margin: 25px;
     justify-content: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #ffffff;
+
 }
 
 .nav_bar {
